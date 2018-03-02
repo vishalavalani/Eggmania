@@ -1,16 +1,17 @@
-﻿<Properties StartupConfiguration="{7E727B0D-2D31-45E9-81ED-E50CEF0D857B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/MainActivity.cs">
+﻿<Properties StartupConfiguration="{22FDC5B6-79EE-438F-B8F6-9D8D71686F27}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Eggmania Status">
     <Files>
-      <File FileName="Droid/MainActivity.cs" Line="10" Column="10" />
+      <File FileName="Droid/MainActivity.cs" Line="10" Column="13" />
+      <File FileName="Eggmania Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Eggmania.Droid PreferredExecutionTarget="1ba4d45a-75c7-47f1-ab77-8dae2bf374ed" />
+  <MonoDevelop.Ide.ItemProperties.Eggmania.Droid PreferredExecutionTarget="8843c6e3-a2b7-4c50-872d-a47c1c8d34d2" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Eggmania.iOS PreferredExecutionTarget="Xamarin.Player.XamarinStudio.DefaultPlayerExecutionTarget">
+  <MonoDevelop.Ide.ItemProperties.Eggmania.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4745BF82-68E3-44A1-A2BD-57FC098FF6A5">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.Eggmania.iOS>
   <MultiItemStartupConfigurations />
