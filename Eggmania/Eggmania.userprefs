@@ -1,20 +1,21 @@
 ﻿<Properties StartupConfiguration="{22FDC5B6-79EE-438F-B8F6-9D8D71686F27}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Eggmania Status">
     <Files>
-      <File FileName="Views/MasterDetail.xaml" Line="16" Column="20" />
-      <File FileName="Views/MasterDetail.xaml.cs" Line="14" Column="83" />
-      <File FileName="Views/App.xaml" Line="9" Column="66" />
+      <File FileName="Views/MainMenu.xaml.cs" Line="14" Column="61" />
+      <File FileName="Models/MainMenuModel.cs" Line="17" Column="6" />
+      <File FileName="Views/App.xaml.cs" Line="13" Column="45" />
+      <File FileName="Views/App.xaml" Line="14" Column="15" />
       <File FileName="Eggmania Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Eggmania.Droid PreferredExecutionTarget="8843c6e3-a2b7-4c50-872d-a47c1c8d34d2" />
+  <MonoDevelop.Ide.ItemProperties.Eggmania.Droid PreferredExecutionTarget="Android.4a46d4510903" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/vishalavalani/Projects/Eggmania/Eggmania/Views/MasterDetail.xaml.cs" relfile="Views/MasterDetail.xaml.cs" line="19" column="10" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Eggmania.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4745BF82-68E3-44A1-A2BD-57FC098FF6A5">
-    <MonoDevelop.MacDev.AppleDevelopmentTeam />
-  </MonoDevelop.Ide.ItemProperties.Eggmania.iOS>
+  <MonoDevelop.Ide.ItemProperties.Eggmania.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F8A73509-2E73-4827-8483-464329B2B8DC" />
   <MultiItemStartupConfigurations />
 </Properties>

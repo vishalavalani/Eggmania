@@ -7,11 +7,13 @@ namespace Eggmania.Views
 {
     public partial class MasterDetail : MasterDetailPage
     {
+        
         public MasterDetail()
         {
             InitializeComponent();
             masterPage.ListView.ItemSelected += OnItemSelected;
-            ((NavigationPage)Detail).BarBackgroundColor = Color.FromHex("fdc300");
+            ((NavigationPage)Detail).BarBackgroundColor = App.ColorYellowTheme;
+            ((NavigationPage)Detail).BarTextColor = App.ColorWhiteTheme;
         }
 
         void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -26,6 +28,8 @@ namespace Eggmania.Views
                 else
                 {
                     NavigationPage mainNav = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                    mainNav.BarBackgroundColor = App.ColorYellowTheme;
+                    mainNav.BarTextColor = App.ColorWhiteTheme;
                     Detail = mainNav;
                     masterPage.ListView.SelectedItem = null;
                     IsPresented = false;

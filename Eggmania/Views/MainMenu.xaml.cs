@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using Eggmania.Models;
 using Xamarin.Forms;
 
 namespace Eggmania.Views
@@ -11,7 +11,7 @@ namespace Eggmania.Views
         {
             InitializeComponent();
             this.Title = "Menu";
-
+            this.listViewMainMenu.ItemsSource = App.mainMenuItems;
         }
     }
 

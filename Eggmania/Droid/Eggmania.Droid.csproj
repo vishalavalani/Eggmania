@@ -136,6 +136,13 @@
     <AndroidResource Include="Resources\drawable\contacts.png" />
     <AndroidResource Include="Resources\drawable\reminders.png" />
     <AndroidResource Include="Resources\drawable\todo.png" />
+    <AndroidResource Include="Resources\drawable\Beverages.png" />
+    <AndroidResource Include="Resources\drawable\ButterlyDelicious.png" />
+    <AndroidResource Include="Resources\drawable\EggSamplers.png" />
+    <AndroidResource Include="Resources\drawable\EggXotica.png" />
+    <AndroidResource Include="Resources\drawable\Extra.png" />
+    <AndroidResource Include="Resources\drawable\Grilled.png" />
+    <AndroidResource Include="Resources\drawable\Rice.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets')" />
