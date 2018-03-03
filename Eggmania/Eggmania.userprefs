@@ -1,38 +1,16 @@
-<Properties StartupConfiguration="{22FDC5B6-79EE-438F-B8F6-9D8D71686F27}|Default">
+﻿<Properties StartupConfiguration="{22FDC5B6-79EE-438F-B8F6-9D8D71686F27}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Eggmania Status">
     <Files>
-<<<<<<< HEAD
-      <File FileName="Droid/MainActivity.cs" Line="10" Column="13" />
-=======
-      <File FileName="Views/MasterDetail.xaml.cs" Line="33" Column="10" />
-      <File FileName="Views/App.xaml" Line="9" Column="66" />
-      <File FileName="Views/MasterPage.xaml.cs" Line="15" Column="1" />
-      <File FileName="Views/Login.xaml.cs" Line="26" Column="34" />
-      <File FileName="Views/MainMenu.xaml.cs" Line="14" Column="13" />
-      <File FileName="Views/MasterDetail.xaml" Line="12" Column="32" />
-      <File FileName="Views/MasterPage.xaml" Line="28" Column="36" />
->>>>>>> efd11bb... * Eggmania.Droid.csproj: Work on project setup, design master detail
       <File FileName="Eggmania Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-<<<<<<< HEAD
-  <MonoDevelop.Ide.ItemProperties.Eggmania.Droid PreferredExecutionTarget="8843c6e3-a2b7-4c50-872d-a47c1c8d34d2" />
-=======
-  <MonoDevelop.Ide.ItemProperties.Eggmania.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
->>>>>>> efd11bb... * Eggmania.Droid.csproj: Work on project setup, design master detail
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/vishalavalani/Projects/Eggmania/Eggmania/Views/MasterDetail.xaml.cs" relfile="Views/MasterDetail.xaml.cs" line="17" column="10" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-<<<<<<< HEAD
-  <MonoDevelop.Ide.ItemProperties.Eggmania.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4745BF82-68E3-44A1-A2BD-57FC098FF6A5">
-    <MonoDevelop.MacDev.AppleDevelopmentTeam />
-  </MonoDevelop.Ide.ItemProperties.Eggmania.iOS>
-=======
   <MonoDevelop.Ide.ItemProperties.Eggmania.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F8A73509-2E73-4827-8483-464329B2B8DC" />
->>>>>>> efd11bb... * Eggmania.Droid.csproj: Work on project setup, design master detail
   <MultiItemStartupConfigurations />
 </Properties>
