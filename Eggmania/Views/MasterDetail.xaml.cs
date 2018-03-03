@@ -11,6 +11,7 @@ namespace Eggmania.Views
         {
             InitializeComponent();
             masterPage.ListView.ItemSelected += OnItemSelected;
+            ((NavigationPage)Detail).BarBackgroundColor = Color.FromHex("fdc300");
         }
 
         void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
