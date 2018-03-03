@@ -7,8 +7,7 @@ namespace Eggmania
         public App()
         {
             InitializeComponent();
-
-            MainPage = new EggmaniaPage();
+            MainPage = new NavigationPage(new Login());
         }
 
         protected override void OnStart()

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Eggmania.Views.Register">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="10" Padding="20">
+                <Label FontSize="13" FontAttributes="Italic">We don't use any of the below details for marketing purpuses nor or we distribute details to third party vendors.</Label>
+                <Entry Placeholder="Full Name" x:Name="name">
+                </Entry>
+                <Entry Placeholder="Email" x:Name="email">
+                </Entry>
+                <Entry Placeholder="Password" x:Name="password">
+                </Entry>
+                <Entry Placeholder="Confirm Password" x:Name="confirmPassword">
+                </Entry>
+                <Entry Placeholder="Mobile Number" x:Name="mobileNumber">
+                </Entry>
+                <Button Text="Register" Style="{StaticResource buttonStyle}"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
