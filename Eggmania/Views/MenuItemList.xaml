@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Eggmania.Views.MenuItemList" BackgroundColor="Black">
+    <ContentPage.Content>
+        <ListView x:Name="listViewMenuItems" BackgroundColor="Black" SeparatorVisibility="None" RowHeight="50">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Spacing="0" Orientation="Horizontal" VerticalOptions="Center">
+                                <Label Text="{Binding Name}" Margin="20,0,5,0" FontSize="18" TextColor="White" VerticalOptions="Center" />
+                                <Image Source="chilli2.png"  IsVisible="{Binding IsSpicy}" />
+                            <Image Source="veg.png" IsVisible="{Binding IsVeg}" />
+                            <Image Source="popularmenu.png" IsVisible="{Binding IsMostPopular}" />
+                                <Label Text="{Binding Price, StringFormat='$ {0}'}" Margin="0,0,20,0" Style="{StaticResource PriceStyle}" WidthRequest="100" HorizontalOptions="EndAndExpand" VerticalOptions="Center" HorizontalTextAlignment="End" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

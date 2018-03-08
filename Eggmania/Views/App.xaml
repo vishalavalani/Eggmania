@@ -9,6 +9,10 @@
                 <Setter Property="BackgroundColor" Value="#dba901" />
                 <Setter Property="TextColor" Value="White" />
             </Style>
+            <Style x:Key="PriceStyle" TargetType="Button">
+                <Setter Property="TextColor" Value="#fdc300" />
+                <Setter Property="FontSize" Value="18" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

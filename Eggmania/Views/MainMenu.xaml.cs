@@ -13,6 +13,20 @@ namespace Eggmania.Views
             this.Title = "Menu";
             this.listViewMainMenu.ItemsSource = App.mainMenuItems;
         }
+
+        async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var menuItem = e.SelectedItem as MainMenuModel;
+            if (menuItem == null)
+            {
+                return;
+            }
+
+            await Navigation.PushAsync(new MenuItemList(menuItem));
+
+            // Manually deselect item
+            listViewMainMenu.SelectedItem = null;
+        }
     }
 
 
