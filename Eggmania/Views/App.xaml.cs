@@ -52,7 +52,7 @@ namespace Eggmania
         private void PopulateMenuItemList(){
             
             var o = new MenuItemModel() { Name = "Boiled eggs", Price = 1.99, IsVeg = true, IsSpicy = true, IsMostPopular = true };
-            o.AddOnItems.Add();
+            //o.AddOnItems.Add();
             menuItemsList.Add(o);
 
             menuItemsList.Add(new MenuItemModel() { Name = "French Toast", Price = 3.99, IsVeg = true, IsSpicy = true, IsMostPopular = true });
