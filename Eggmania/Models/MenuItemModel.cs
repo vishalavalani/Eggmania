@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Eggmania.Models
 {
     public class MenuItemModel
@@ -8,5 +10,6 @@ namespace Eggmania.Models
         public Boolean IsSpicy { get; set; }
         public Boolean IsVeg { get; set; }
         public Boolean IsMostPopular { get; set; }
+        public List<AddOn> AddOnItems { get; set; } = new List<AddOn>();
     }
 }

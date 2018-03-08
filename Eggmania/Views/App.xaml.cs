@@ -6,6 +6,7 @@ namespace Eggmania
 {
     public partial class App : Application
     {
+        
         public static Color ColorYellowTheme
         {
             get
@@ -49,7 +50,11 @@ namespace Eggmania
         }
 
         private void PopulateMenuItemList(){
-            menuItemsList.Add(new MenuItemModel() { Name = "Boiled eggs", Price = 1.99, IsVeg = true, IsSpicy = true, IsMostPopular = true });
+            
+            var o = new MenuItemModel() { Name = "Boiled eggs", Price = 1.99, IsVeg = true, IsSpicy = true, IsMostPopular = true };
+            o.AddOnItems.Add();
+            menuItemsList.Add(o);
+
             menuItemsList.Add(new MenuItemModel() { Name = "French Toast", Price = 3.99, IsVeg = true, IsSpicy = true, IsMostPopular = true });
             menuItemsList.Add(new MenuItemModel() { Name = "Boil Fry", Price = 5.49, IsVeg = true, IsSpicy = false, IsMostPopular = true });
             menuItemsList.Add(new MenuItemModel() { Name = "Masala Omelet", Price = 3.99, IsVeg = true, IsSpicy = true, IsMostPopular = true });
@@ -57,6 +62,46 @@ namespace Eggmania
             menuItemsList.Add(new MenuItemModel() { Name = "Jetty Rolls", Price = 6.49, IsVeg = true, IsSpicy = true, IsMostPopular = true });
             menuItemsList.Add(new MenuItemModel() { Name = "Masala Half Fry", Price = 5.99, IsVeg = true, IsSpicy = true, IsMostPopular = true });
         }
+
+        public static List<AddOnItem> breadItems = new List<AddOnItem>() { new AddOnItem { DisplayName = "Chapati - 1 piece:", Price = 0.0M }, new AddOnItem { DisplayName = "Bread - 3 piece", Price = 0.0M } };
+        public static AddOn breadAddOn = new AddOn()
+        {
+            Title = "Choose your Bread (Required)",
+            Description = "Select One",
+            AddOnItems = breadItems
+        };
+
+        public static List<AddOnItem> cookingPrefItems = new List<AddOnItem>() { new AddOnItem { DisplayName = "Oil:", Price = 0.0M }, new AddOnItem { DisplayName = "Butter :", Price = 0.99M }, new AddOnItem { DisplayName = "Olive Oil:", Price = 1.99M } };
+        public static AddOn cookingPrefAddOn = new AddOn()
+        {
+            Title = "Your Cooking Preference",
+            Description = "All items cooked in Oil if no option selected",
+            AddOnItems = cookingPrefItems
+        };
+
+        public static List<AddOnItem> extraCheeseItems = new List<AddOnItem>() { new AddOnItem { DisplayName = "Extra Cheese:", Price = 1.99M } };
+        public static AddOn extraCheeseAddOn = new AddOn()
+        {
+            Title = "Extra Cheese",
+            Description = "Please select",
+            AddOnItems = extraCheeseItems
+        };
+
+        public static List<AddOnItem> sodaItems = new List<AddOnItem>() { new AddOnItem { DisplayName = "Coke:", Price = 0.00M }, new AddOnItem { DisplayName = "Diet Coke:", Price = 0.00M }, new AddOnItem { DisplayName = "Sprite:", Price = 0.00M } };
+        public static AddOn sodaAddOn = new AddOn()
+        {
+            Title = "Your Choice (Required)",
+            Description = "Please Select",
+            AddOnItems = sodaItems
+        };
+
+        public static List<AddOnItem> thumsUpLimcaItems = new List<AddOnItem>() { new AddOnItem { DisplayName = "Thums Up:", Price = 0.00M }, new AddOnItem { DisplayName = "Limca:", Price = 0.00M } };
+        public static AddOn thumsUpLimca = new AddOn()
+        {
+            Title = "Thums Up or Limca (Required)",
+            Description = "Please Select",
+            AddOnItems = sodaItems
+        };
 
         protected override void OnStart()
         {
