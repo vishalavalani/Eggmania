@@ -13,6 +13,10 @@
                 <Setter Property="TextColor" Value="#fdc300" />
                 <Setter Property="FontSize" Value="18" />
             </Style>
+            <Style x:Key="sidePagePaddingStackLayout" TargetType="StackLayout">
+                <Setter Property="Padding" Value="20,0">
+                </Setter>
+            </Style>
             <Style x:Key="topPagePadding" TargetType="ContentPage">
                 <Setter Property="Padding">
                     <Setter.Value>

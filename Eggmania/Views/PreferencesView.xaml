@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Eggmania.Views.PreferencesView">
+    <ContentView.Content>
+        <StackLayout x:Name="stackMainPref">
+            <Label x:Name="lblTitle" Text=" + Your Cooking Preference" HeightRequest="40" VerticalTextAlignment="Center" BackgroundColor="#dba901">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapPref" />
+                </Label.GestureRecognizers>
+            </Label>
+            <StackLayout x:Name="stackSubPref" Orientation="Vertical">
+                <Label x:Name="lblSubTitle" FontSize="13" FontAttributes="Italic" Text="All items cooked in Oil if no option selected">
+                </Label>
+                <Picker x:Name="pickerPref" BackgroundColor="White" TextColor="Black">
+                </Picker>
+                <Image Source="downarrow.png" WidthRequest="20" HeightRequest="20" HorizontalOptions="End" Margin="0,-30,10,10">
+                </Image>
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

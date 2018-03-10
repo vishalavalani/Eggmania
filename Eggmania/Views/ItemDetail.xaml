@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Eggmania.Views.ItemDetail" Style="{StaticResource topPagePadding}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="White">
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout BackgroundColor="Black">
             <StackLayout BackgroundColor="#dba901" Orientation="Horizontal">
-                <Label Margin="10" Text="Item" BackgroundColor="Gray" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                <Label x:Name="categoryName" Margin="10" Text="Item" BackgroundColor="Gray" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                <Button Margin="10" Text="Add" BorderRadius="0" BackgroundColor="Green" TextColor="White" Clicked="AddItemToCart" />
                 <Button Margin="10" Text="X" BorderRadius="15" BackgroundColor="Red" Clicked="DismissView" />
-             </StackLayout>
+            </StackLayout>
+            <ScrollView>
+                <StackLayout Style="{StaticResource sidePagePaddingStackLayout}">
+                    <Label x:Name="itemName" FontSize="20" FontAttributes="Bold" Text="Boil Fry">
+                    </Label>
+                    <Label x:Name="itemDescription" FontSize="13" FontAttributes="Italic" Text="6 pieces (3 boiled eggs) sauteed in Indian Spicy Masala">
+                    </Label>
+                    <StackLayout Orientation="Horizontal" Margin="0,5,0,0">
+                        <Label HorizontalOptions="StartAndExpand" VerticalOptions="Center" Text="$1.99" FontSize="16" FontAttributes="Bold">
+                        </Label>
+                        <Button x:Name="buttonPlus" Text="+" FontSize="20" BackgroundColor="White" TextColor="Black" BorderRadius="0">
+                        </Button>
+                        <Label x:Name="lblItemCounts" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="White" WidthRequest="30" HeightRequest="0" Text="1" TextColor="Black">
+                        </Label>
+                        <Button x:Name="buttonMinus" Text="-" FontSize="20" BackgroundColor="White" TextColor="Black" BorderRadius="0">
+                        </Button>
+                    </StackLayout>
+                    <StackLayout x:Name="stackPreferences">
+                    </StackLayout>
+                    <StackLayout x:Name="stackMainSpecialInst">
+                        <Label x:Name="lblSpecialInst" Text=" + Special Instructions" HeightRequest="40" VerticalTextAlignment="Center" BackgroundColor="#dba901">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnSpecialInst" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <StackLayout x:Name="stackSpecialInst" Orientation="Vertical">
+                            <Label Text="Special Instructions:">
+                            </Label>
+                            <Entry BackgroundColor="White" TextColor="Black" Placeholder="Enter your coooking preference" x:Name="txtSpecialInstructions" HeightRequest="60">
+                            </Entry>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
