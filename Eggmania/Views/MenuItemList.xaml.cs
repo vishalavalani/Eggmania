@@ -14,8 +14,6 @@ namespace Eggmania.Views
             InitializeComponent();
             this.Title = "Items";
             selectedMenu = new MainMenuModel { DisplayName = "No Item Selected", ImageName = "" };
-            //PopulateMenuItemList();
-            //this.listViewMenuItems.ItemsSource = menuItemsList;
         }
 
         public MenuItemList(MainMenuModel mainMenu)
@@ -25,15 +23,18 @@ namespace Eggmania.Views
             this.Title = selectedMenu.DisplayName;
             this.listViewMenuItems.ItemsSource = App.menuItemsList;
         }
-        private void PopulateMenuItemList()
+
+        async void OnItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
         {
-            menuItemsList.Add(new MenuItemModel() { Name = "Boiled eggs", Price = 1.99, IsVeg = true, IsSpicy = true, IsMostPopular = true });
-            menuItemsList.Add(new MenuItemModel() { Name = "French Toast", Price = 3.99, IsVeg = true, IsSpicy = true, IsMostPopular = true });
-            menuItemsList.Add(new MenuItemModel() { Name = "Boil Fry", Price = 5.49, IsVeg = true, IsSpicy = true, IsMostPopular = true });
-            menuItemsList.Add(new MenuItemModel() { Name = "Masala Omelet", Price = 3.99, IsVeg = true, IsSpicy = true, IsMostPopular = true });
-            menuItemsList.Add(new MenuItemModel() { Name = "Egg Katori", Price = 6.49, IsVeg = true, IsSpicy = true, IsMostPopular = true });
-            menuItemsList.Add(new MenuItemModel() { Name = "Jetty Rolls", Price = 6.49, IsVeg = true, IsSpicy = true, IsMostPopular = true });
-            menuItemsList.Add(new MenuItemModel() { Name = "Masala Half Fry", Price = 5.99, IsVeg = true, IsSpicy = true, IsMostPopular = true });
+            var item = e.SelectedItem as MenuItemModel;
+
+            if(item == null){
+                return;
+            }
+
+            await Navigation.PushModalAsync(new ItemDetail(item));
+
+            listViewMenuItems.SelectedItem = null;
         }
     }
 

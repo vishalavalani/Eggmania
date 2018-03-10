@@ -33,7 +33,7 @@ namespace Eggmania
             MainPage = new NavigationPage(new Login());
             mainMenuItems = new List<MainMenuModel>();
             PopulateMainMenuListItems();
-            PopulateMenuItemList();
+            PopulateMenuEggSamplerItemList();
         }
 
         private void PopulateMainMenuListItems()
@@ -49,18 +49,34 @@ namespace Eggmania
 
         }
 
-        private void PopulateMenuItemList(){
+        private void PopulateMenuEggSamplerItemList(){
             
-            var o = new MenuItemModel() { Name = "Boiled eggs", Price = 1.99, IsVeg = true, IsSpicy = true, IsMostPopular = true };
-            //o.AddOnItems.Add();
-            menuItemsList.Add(o);
+            var boiledEggs = new MenuItemModel() { Name = "Boiled eggs", Price = 1.99, IsVeg = false, IsSpicy = false, IsMostPopular = false };
+            menuItemsList.Add(boiledEggs);
 
-            menuItemsList.Add(new MenuItemModel() { Name = "French Toast", Price = 3.99, IsVeg = true, IsSpicy = true, IsMostPopular = true });
-            menuItemsList.Add(new MenuItemModel() { Name = "Boil Fry", Price = 5.49, IsVeg = true, IsSpicy = false, IsMostPopular = true });
-            menuItemsList.Add(new MenuItemModel() { Name = "Masala Omelet", Price = 3.99, IsVeg = true, IsSpicy = true, IsMostPopular = true });
-            menuItemsList.Add(new MenuItemModel() { Name = "Egg Katori", Price =6.49, IsVeg = true, IsSpicy = true, IsMostPopular = true });
-            menuItemsList.Add(new MenuItemModel() { Name = "Jetty Rolls", Price = 6.49, IsVeg = true, IsSpicy = true, IsMostPopular = true });
-            menuItemsList.Add(new MenuItemModel() { Name = "Masala Half Fry", Price = 5.99, IsVeg = true, IsSpicy = true, IsMostPopular = true });
+            var frenchToast = new MenuItemModel() { Name = "French Toast", Price = 3.99, IsVeg = false, IsSpicy = false, IsMostPopular = false };
+            frenchToast.AddOnItems.Add(cookingPrefAddOn);
+            menuItemsList.Add(frenchToast);
+
+            var boilFry = new MenuItemModel() { Name = "Boil Fry", Price = 5.49, IsVeg = false, IsSpicy = true, IsMostPopular = true };
+            boilFry.AddOnItems.Add(cookingPrefAddOn);
+            menuItemsList.Add(boilFry);
+
+            var masalOmelet = new MenuItemModel() { Name = "Masala Omelet", Price = 3.99, IsVeg = false, IsSpicy = false, IsMostPopular = false };
+            masalOmelet.AddOnItems.Add(cookingPrefAddOn);
+            menuItemsList.Add(masalOmelet);
+
+            var eggKatori = new MenuItemModel() { Name = "Egg Katori", Price = 6.49, IsVeg = false, IsSpicy = false, IsMostPopular = true };
+            eggKatori.AddOnItems.Add(cookingPrefAddOn);    
+            menuItemsList.Add(eggKatori);
+
+            var jettRolls = new MenuItemModel() { Name = "Jetty Rolls", Price = 6.49, IsVeg = false, IsSpicy = false, IsMostPopular = false };
+            jettRolls.AddOnItems.Add(cookingPrefAddOn);
+            menuItemsList.Add(jettRolls);
+
+            var masalHalfFry = new MenuItemModel() { Name = "Masala Half Fry", Price = 5.99, IsVeg = false, IsSpicy = true, IsMostPopular = false };
+            masalHalfFry.AddOnItems.Add(cookingPrefAddOn);
+            menuItemsList.Add(masalHalfFry);
         }
 
         public static List<AddOnItem> breadItems = new List<AddOnItem>() { new AddOnItem { DisplayName = "Chapati - 1 piece:", Price = 0.0M }, new AddOnItem { DisplayName = "Bread - 3 piece", Price = 0.0M } };
