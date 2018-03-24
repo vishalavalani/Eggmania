@@ -14,5 +14,9 @@ namespace Eggmania.Models
             get;
             set;
         }
+
+        public int Order { get; set; }
+
+        public string Key { get; set; }
     }
 }

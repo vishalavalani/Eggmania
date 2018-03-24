@@ -138,6 +138,7 @@
     <Compile Include="Views\PreferencesView.xaml.cs">
       <DependentUpon>PreferencesView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Database\DbFirebase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
@@ -149,6 +150,30 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>packages\Xamarin.Forms.2.5.0.280555\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="crypto">
+      <HintPath>packages\Firebase.Xamarin.0.3.6\lib\crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Xamarin">
+      <HintPath>packages\Firebase.Xamarin.0.3.6\lib\Firebase.Xamarin.dll</HintPath>
+    </Reference>
+    <Reference Include="JWT">
+      <HintPath>packages\Firebase.Xamarin.0.3.6\lib\JWT.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Firebase.Xamarin.0.3.6\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Core">
+      <HintPath>packages\Firebase.Xamarin.0.3.6\lib\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>packages\Firebase.Xamarin.0.3.6\lib\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>packages\Firebase.Xamarin.0.3.6\lib\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>packages\Firebase.Xamarin.0.3.6\lib\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -156,6 +181,7 @@
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="Models\" />
+    <Folder Include="Database\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="packages\Xamarin.Forms.2.5.0.280555\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('packages\Xamarin.Forms.2.5.0.280555\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />
